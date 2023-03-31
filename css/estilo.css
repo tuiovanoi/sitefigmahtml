@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: Roboto;
+  font-weight: 400;
+}
+:root {
+  --primary: #fff;
+  --secondary: #052A55;
+  --third: #ffb74d;
+  --thirdLight: #ffe9ca;
+  --white: #000000;
+  --black: #000000;
+}
+header {
+  display: flex;
+  border-bottom: 0.5rem solid var(--secondary);
+}
+header picture img {
+  height: 5rem;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 1.5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+main {
+  min-height: 70vh;
+}
+footer {
+  background-color: var(--secondary);
+  height: 4rem;
+}
+footer div {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+/* Specific main */
+main picture.main {
+  display: flex;
+  height: 100%;
+}
+main picture.main img{
+    width: 33%;
+}
+main picture.main img.rustinpeace{
+    z-index: 1;
+    margin: -1rem;
+}
+footer.content div{
+    width: 10%;
+}
